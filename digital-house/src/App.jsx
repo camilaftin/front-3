@@ -1,8 +1,13 @@
+import { SegundaAula } from './aulas/SegundaAula'
 import { Login } from './pages/Login'
+
 
 function App() {
   return (
-    <Login></Login>
+    
+    // <Login/>
+    <SegundaAula/>
+    
   )
 }
 

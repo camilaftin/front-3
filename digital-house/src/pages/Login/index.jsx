@@ -1,5 +1,5 @@
 export function Login() {
   return (
-    <h1>Componente de Login</h1>
+    <h1 className="">Componente de Login</h1>
   )
 }
