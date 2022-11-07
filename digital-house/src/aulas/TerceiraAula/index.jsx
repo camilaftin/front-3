@@ -6,24 +6,32 @@ export function TerceiraAula(){
     
 
     const components = [
-        { name: 'Component Card', description: 'teste', image:'https://pm1.narvii.com/6960/72324b671534c3c543a16183d813d162b7633cf0r1-469-314v2_128.jpg'}
+        { name: 'Component Card', description: 'teste', image:'https://pm1.narvii.com/6960/72324b671534c3c543a16183d813d162b7633cf0r1-469-314v2_128.jpg'},
+        { name: 'Component Card 1', description: 'teste', image:'https://pm1.narvii.com/6960/72324b671534c3c543a16183d813d162b7633cf0r1-469-314v2_128.jpg'},
+        { name: 'Component Card 2', description: 'teste', image:'https://pm1.narvii.com/6960/72324b671534c3c543a16183d813d162b7633cf0r1-469-314v2_128.jpg'}
+
     ]
 
     
 
     return (
         <div>
-            <img src={ batataJpg }/>
+            
             <h1>Listas de componentes encontradso em um sistema</h1>
             <ul>
-                <li>
-                    <img src={ components[0].image }/>
-                    <h1>{ components[0].name }</h1>
-                    <p>{ components[0].description }</p>
-                </li>
+                {
+                    components.map(component => (
+                        <li>                   
+                            <img src={ component.image }/>
+                            <h1>{ component.name }</h1>
+                            <p>{ component.description }</p>
+                        </li>
+                    ))
+                }
+              
             </ul>
 
-        </div>
+        </div>   
         
     )
 }
