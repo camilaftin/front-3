@@ -24,11 +24,24 @@ export function QuartaAula() {
             <h1 className='main-title'>Componentes identificados</h1>
 
             <ul className = 'components-finded'>
-                <li>
-                    <img src={youtubeImage} alt=""/>
-                    <h1>Video</h1>
-                    <p>Lorem ipsum</p>
-                </li>
+
+                {
+                    componentsFinded.map(
+                        component => {
+                            return (
+                                <li>
+                                <img src={component.image} alt=""/>
+                                <h1>{component.title}</h1>
+                                <p>{component.text}</p>
+                            </li>
+
+                            )
+                        }
+
+                    )
+                }
+
+              
             </ul>
         </div>
         
