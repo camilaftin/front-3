@@ -1,3 +1,9 @@
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom"
+
 import { DecimaTerceiraAula } from './aulas/DecimaTerceiraAula'
 import { QuartaAula } from './aulas/QuartaAula'
 import { QuintaAula } from './aulas/QuintaAula'
@@ -6,17 +12,27 @@ import { TerceiraAula } from './aulas/TerceiraAula'
 import { Login } from './pages/Login'
 
 
+
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: 'home',
+      element: <div>hello world</div>
+    }
+  ])
+
   return (
     <>
-    {/* <Login/> */}
-    {/* <SegundaAula/> */}
-    {/*<TerceiraAula/>*/}
-    {/*<QuartaAula/>*/}
-    {/*<QuintaAula/>*/}
-    <DecimaTerceiraAula/>
+      <RouterProvider />
+
+      {/* <Login/> */}
+      {/* <SegundaAula/> */}
+      {/*<TerceiraAula/>*/}
+      {/*<QuartaAula/>*/}
+      {/*<QuintaAula/>*/}
+      {/*<DecimaTerceiraAula />*/}
     </>
-    
   )
 }
 

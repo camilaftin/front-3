@@ -1,7 +1,9 @@
 import './style.scss'
 
 
-export function SetimaAula(){
+export function SetimaAula() {
+
+    let contador = 0;
 
 
     return (
@@ -11,7 +13,7 @@ export function SetimaAula(){
             <h1>Contador</h1>
 
             <button>Adicionar</button>
-            <span>Numero atual: 0</span>
+            <span>Numero atual: {contador}</span>
 
 
 
